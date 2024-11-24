@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9fafb;
+}
+
+@layer components {
+  .icon-button {
+    @apply p-2 text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+  }
+}
+
+/* Скрываем стандартный скроллбар */
+.overflow-x-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.overflow-x-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Скрываем скроллбар для элементов с классом scrollbar-hide */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Стили для PDF экспорта */
+.pdf-export {
+  background-color: white !important;
+  color: black !important;
+  font-family: 'Arial', sans-serif !important;
+  line-height: 1.6 !important;
+}
+
+.pdf-export h1 {
+  font-size: 24px !important;
+  font-weight: bold !important;
+  margin-bottom: 20px !important;
+  color: #000 !important;
+}
+
+.pdf-export h2 {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  margin-top: 20px !important;
+  margin-bottom: 15px !important;
+  color: #000 !important;
+}
+
+.pdf-export h3 {
+  font-size: 18px !important;
+  font-weight: bold !important;
+  margin-top: 15px !important;
+  margin-bottom: 10px !important;
+  color: #000 !important;
+}
+
+.pdf-export p {
+  margin-bottom: 8px !important;
+  color: #000 !important;
+}
+
+.pdf-export .grid {
+  display: block !important;
+  margin-bottom: 20px !important;
+}
+
+.pdf-export .grid > div {
+  margin-bottom: 10px !important;
+}
+
+.pdf-export .border-t {
+  border-top: 1px solid #000 !important;
+  margin-top: 20px !important;
+  padding-top: 20px !important;
+}
+
+.pdf-export .text-emerald-600 {
+  color: #000 !important;
+  font-weight: bold !important;
+}
+
+.pdf-export .text-gray-600 {
+  color: #000 !important;
+}
